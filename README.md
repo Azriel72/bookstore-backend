@@ -45,4 +45,21 @@ Este proyecto sigue la arquitectura de **Clean Architecture**, con las siguiente
 
    ```bash
    git clone https://github.com/tu-usuario/bookstore-backend.git
+
+2. **Cambiar el directorio**
+
+  ```bash
    cd bookstore-backend
+  ```
+
+3. **Restaurar las dependencias**
+
+  ```bash
+     dotnet restore
+  ```
+
+4. **Ejecutar el proyecto**
+
+  ```bash
+     dotnet restore
+  ```
