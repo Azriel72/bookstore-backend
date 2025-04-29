@@ -1,15 +1,26 @@
 [
   {
-    "ContainingType": "BookStore.API.Controllers.AuthorsController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.AuthorsController",
     "Method": "GetAllAuthors",
     "RelativePath": "api/Authors",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookStore.Application.DTOs.AuthorDto, bookstore-backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "PaginatedResponse\u00601[[BookStore.Application.DTOs.AuthorDto, bookstore-backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,7 +31,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.AuthorsController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.AuthorsController",
     "Method": "AddAuthor",
     "RelativePath": "api/Authors",
     "HttpMethod": "POST",
@@ -46,7 +57,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.AuthorsController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.AuthorsController",
     "Method": "GetAuthorById",
     "RelativePath": "api/Authors/{id}",
     "HttpMethod": "GET",
@@ -72,7 +83,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.AuthorsController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.AuthorsController",
     "Method": "UpdateAuthor",
     "RelativePath": "api/Authors/{id}",
     "HttpMethod": "PUT",
@@ -103,7 +114,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.AuthorsController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.AuthorsController",
     "Method": "DeleteAuthor",
     "RelativePath": "api/Authors/{id}",
     "HttpMethod": "DELETE",
@@ -119,16 +130,27 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookStore.API.Controllers.BooksController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.BooksController",
     "Method": "GetAllBooks",
     "RelativePath": "api/Books",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookStore.Application.DTOs.BookDto, bookstore-backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "PaginatedResponse\u00601[[BookStore.Application.DTOs.BookDto, bookstore-backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -139,7 +161,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.BooksController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.BooksController",
     "Method": "AddBook",
     "RelativePath": "api/Books",
     "HttpMethod": "POST",
@@ -165,7 +187,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.BooksController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.BooksController",
     "Method": "GetBookById",
     "RelativePath": "api/Books/{id}",
     "HttpMethod": "GET",
@@ -191,7 +213,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.BooksController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.BooksController",
     "Method": "UpdateBook",
     "RelativePath": "api/Books/{id}",
     "HttpMethod": "PUT",
@@ -222,7 +244,7 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.BooksController",
+    "ContainingType": "bookstore_backend.BookStore.API.Controller.BooksController",
     "Method": "DeleteBook",
     "RelativePath": "api/Books/{id}",
     "HttpMethod": "DELETE",

@@ -1,13 +1,10 @@
-﻿using BookStore.Domain.Common;
-using BookStore.Domain.Entities;
-using bookstore_backend.BookStore.Domain.Common;
-using bookstore_backend.BookStore.Domain.Interfaces;
+﻿using BookStore.Domain.Entities;
 
 namespace BookStore.Domain.Interfaces
 {
-    public interface IBookRepository : IPaginationRepository<Book>
+    public interface IBookRepository
     {
-        Task<PagedResult<Author>> GetAllBooksAsync(PaginationParameters parameters);
+        Task<IEnumerable<Book>> GetAllBooksAsync();
         Task<Book?> GetBookByIdAsync(int id);
         Task<Book> AddBookAsync(Book book);
         Task<Book> UpdateBookAsync(int id, Book book);
