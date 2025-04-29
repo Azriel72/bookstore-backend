@@ -41,25 +41,30 @@ Este proyecto sigue la arquitectura de **Clean Architecture**, con las siguiente
 
 ### Instrucciones para Ejecutar el Proyecto
 
-1. **Clonar el repositorio**:
+1. **Instalar .NET SDK**
+  
+Si no tienes instalado el **.NET SDK** (mínimo versión 6.0 o superior), puedes descargarlo e instalarlo desde el sitio oficial:
+[Descargar .NET SDK](https://dotnet.microsoft.com/download)
 
-   ```bash
+2. **Clonar el repositorio**
+
+  ```bash
    git clone https://github.com/tu-usuario/bookstore-backend.git
-   ```
+  ```
 
-2. **Cambiar el directorio**
+3. **Cambiar el directorio**
 
   ```bash
    cd bookstore-backend
   ```
 
-3. **Restaurar las dependencias**
+4. **Restaurar las dependencias**
 
   ```bash
      dotnet restore
   ```
 
-4. **Ejecutar el proyecto**
+5. **Ejecutar el proyecto**
 
   ```bash
      dotnet restore
