@@ -67,5 +67,5 @@ Si no tienes instalado el **.NET SDK** (mínimo versión 6.0 o superior), puedes
 5. **Ejecutar el proyecto**
 
   ```bash
-     dotnet restore
+     dotnet run
   ```
