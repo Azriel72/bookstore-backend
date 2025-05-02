@@ -49,7 +49,7 @@ Si no tienes instalado el **.NET SDK** (mínimo versión 6.0 o superior), puedes
 2. **Clonar el repositorio**
 
   ```bash
-   git clone https://github.com/tu-usuario/bookstore-backend.git
+   git clone https://github.com/Azriel72/bookstore-backend.git
   ```
 
 3. **Cambiar el directorio**
